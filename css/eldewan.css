@@ -278,6 +278,7 @@ header h2 {
     position: relative;
     padding-top: 30px;
     height: 100vh;
+    overflow: hidden;
 }
 
 .turkish-coffe::before {
@@ -324,7 +325,7 @@ header h2 {
 .turkish-coffe .container .box ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 .turkish-coffe .container .box ul li {
@@ -349,31 +350,41 @@ header h2 {
     width: 100px;
 }
 
+@media (max-height:480px) {
+    .turkish-coffe .logo {
+        display: none   ;
+    }
+}
+
 .flover {
+    position: relative;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    position: relative;
 }
 
 .flover p {
-    display: none;
-}
-
-.flover:hover p {
-    display: flex;
     font-size: 14px;
     position: absolute;
     width: 203px;
     text-align: center;
     top: 30px;
-    right: -5px;
     background-color: rgb(0 0 0 / 40%);
     padding: 10px;
     border-radius: 20px;
     border: 1px solid var(--main-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    right: -200%;
+}
+
+.flover:hover p {
+    right: -5px;
 }
 
 
