@@ -382,11 +382,11 @@ header .links ul li:not(:last-child) {
     bottom: 10px;
     left: 50%;
     z-index: 999;
-    transform: rotate(180deg) translate(-50%);
-    -webkit-transform: rotate(180deg) translate(-50%);
-    -moz-transform: rotate(180deg) translate(-50%);
-    -ms-transform: rotate(180deg) translate(-50%);
-    -o-transform: rotate(180deg) translate(-50%);
+    transform: rotate(180deg) translate(50%);
+    -webkit-transform: rotate(180deg) translate(50%);
+    -moz-transform: rotate(180deg) translate(50%);
+    -ms-transform: rotate(180deg) translate(50%);
+    -o-transform: rotate(180deg) translate(50%);
 }
 
 .landing .go-down i {
